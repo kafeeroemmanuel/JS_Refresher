@@ -82,9 +82,9 @@ const wordList = [
 
   { lx: "lunaku", ps: "noun", ge: "day/date" },
 
-  { lx: "lunkupe", ps: "adjective", ge: "very poor" },
+  { lx: "Lunkupe", ps: "adjective", ge: "very poor" },
 
-  { lx: "lusaniya", ps: ",noun", ge: "flat pan/food tray" },
+  { lx: "Lusaniya", ps: ",noun", ge: "flat pan/food tray" },
 
   { lx: "lusuku", ps: "noun", ge: "garden of banana plantation" },
 
@@ -92,16 +92,16 @@ const wordList = [
 
   { lx: "lwaki", ps: "noun", ge: "why/what for" },
 
-  { lx: "lyaffe", ps: "pronoun", ge: "it is ours" },
+  { lx: "Lyaffe", ps: "pronoun", ge: "it is ours" },
 
   { lx: "lyange", ps: "pronoun", ge: "it is mine" },
 ];
 
 wordList.sort(function (a, b) {
-  if (a.lx < b.lx) {
+  if (a.lx.toLocaleUpperCase < b.lx.toLocaleUpperCase) {
     return -1;
   }
-  if (a.lx > b.lx) {
+  if (a.lx.toLocaleUpperCase > b.lx.toLocaleUpperCase) {
     return 1;
   }
   return 0;
